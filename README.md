@@ -7,6 +7,12 @@ Initial Generation Languages:
 - C# for models
 - SQL Server for storage
 
+Target Browsers:
+- Chrome
+- Microsoft Edge
+- Safari
+- Firefox
+
 Basic tools:
 - Visual Studio 2015 Community Edition
 - NodeJS
