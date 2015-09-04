@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "OTAP.Web", "OTAP.Web\", "{87309453-9AA5-41FD-AEAF-C1E59E41D2D0}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_59061"
+		Debug.AspNetCompiler.PhysicalPath = "OTAP.Web\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_59061\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_59061"
+		Release.AspNetCompiler.PhysicalPath = "OTAP.Web\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_59061\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "59061"
+		SlnRelativePath = "OTAP.Web\"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OTAP.API", "OTAP.API\OTAP.API.csproj", "{F535C1D7-3D22-4B94-B895-710B1C2E73B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OTAP.Tests", "OTAP.Tests\OTAP.Tests.csproj", "{1F334132-3D69-4FB6-AA0F-41076AC4508A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{87309453-9AA5-41FD-AEAF-C1E59E41D2D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87309453-9AA5-41FD-AEAF-C1E59E41D2D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87309453-9AA5-41FD-AEAF-C1E59E41D2D0}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{87309453-9AA5-41FD-AEAF-C1E59E41D2D0}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{F535C1D7-3D22-4B94-B895-710B1C2E73B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F535C1D7-3D22-4B94-B895-710B1C2E73B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F535C1D7-3D22-4B94-B895-710B1C2E73B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F535C1D7-3D22-4B94-B895-710B1C2E73B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F334132-3D69-4FB6-AA0F-41076AC4508A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F334132-3D69-4FB6-AA0F-41076AC4508A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F334132-3D69-4FB6-AA0F-41076AC4508A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F334132-3D69-4FB6-AA0F-41076AC4508A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
