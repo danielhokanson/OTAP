@@ -1,7 +1,11 @@
 # OTAP
 Ontological/Topological Application Development Web Based IDE
 
-A web based IDE for generation of functional busiuness requirements.
+A web based IDE for generation of functional business requirements, testing rules and basic code generation.
+
+Initial Generation Languages:
+- C# for models
+- SQL Server for storage
 
 Basic tools:
 - Visual Studio 2015 Community Edition
