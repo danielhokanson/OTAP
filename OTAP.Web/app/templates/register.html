@@ -1,0 +1,12 @@
+﻿<div ng-controller="UserCtrl as user" class="popover ">
+    <div class="arrow"></div>
+    <div class="popover-content">
+        Email
+        <input class="form-control" type="email" ng-model="user.registery.email" />
+        Password
+        <input class="form-control" type="password" ng-model="user.registery.password" />
+        Confirm Password
+        <input class="form-control" type="password" ng-model="user.registery.confirmPassword" />
+        <button class="form-control btn btn-success" type="submit" ng-click="user.register($hide);">Create OTAP Account</button>
+    </div>
+</div>

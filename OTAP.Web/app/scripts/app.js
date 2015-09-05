@@ -17,7 +17,9 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'LocalStorageModule',
+    'mgcrea.ngStrap'
   ])
   .config(function ($routeProvider) {
     $routeProvider

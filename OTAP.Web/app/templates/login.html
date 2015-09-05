@@ -1,0 +1,11 @@
+﻿<div ng-controller="UserCtrl as user" class="popover ">
+    <div class="arrow"></div>
+    <div class="popover-content">
+        Email
+        <input class="form-control" type="email" ng-model="user.email" />
+        Password
+        <input type="password" class="form-control" ng-model="user.password" />
+        <button type="button" class="btn btn-success form-control" ng-click="user.login($hide);" ng-disabled="!user.email || !user.password">Sign In</button>
+        <button type="button" class="btn btn-default form-control" ng-click="user.email = undefined; user.password=undefined; $hide()">cancel</button>
+    </div>
+</div>
