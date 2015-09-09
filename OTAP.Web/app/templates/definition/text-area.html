@@ -1,0 +1,14 @@
+﻿<div ng-controller="DefinitionCtrl as textDefinition">
+    <div class="form-control" style="height:auto; background-color:#F0F0F0">
+        <div class="btn btn-primary" ng-click="textDefinition.isEditing=true" ng-show="!textDefinition.isEditing"><i class="glyphicon glyphicon-edit"></i></div>
+        <div class="btn btn-success" ng-click="textDefinition.isEditing=false" ng-show="textDefinition.isEditing"><i class="glyphicon glyphicon-check"></i></div>
+    </div>
+    <textarea class="form-control" ng-model="textDefinition.text" ng-change="textDefinition.refreshProperties()" ng-show="textDefinition.isEditing"></textarea>
+    <div class="form-control" ng-show="!textDefinition.isEditing" style="height:auto">
+        <div ng-repeat="termItem in textDefinition.usedTerms | orderBy : 'order'" 
+             class="btn btn-term" ng-class="{'btn-danger':!termItem.term.isDefined, 'btn-default': termItem.term.isDefined, 'margin-left':!$first}"
+             data-title="'{{termItem.term.name}}' needs a definition" data-trigger="hover" bs-tooltip>
+                {{termItem.term.name}}
+        </div>
+    </div>
+</div>
