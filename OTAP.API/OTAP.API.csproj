@@ -48,10 +48,6 @@
       <HintPath>..\packages\AboditUnits.2.12\lib\net40\AboditUnits.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="ejml-0.23, Version=0.23.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Stanford.NLP.Parser.3.5.2\lib\ejml-0.23.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="IKVM.AWT.WinForms, Version=8.0.5449.1, Culture=neutral, PublicKeyToken=13235d27fcbfff58, processorArchitecture=MSIL">
       <HintPath>..\packages\IKVM.8.0.5449.1\lib\IKVM.AWT.WinForms.dll</HintPath>
       <Private>True</Private>
@@ -168,6 +164,18 @@
       <HintPath>..\packages\ImpromptuInterface.6.2.2\lib\net40\ImpromptuInterface.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="javax.json, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Stanford.NLP.CoreNLP.3.5.2\lib\javax.json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="joda-time, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Stanford.NLP.CoreNLP.3.5.2\lib\joda-time.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="jollyday, Version=0.4.7.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Stanford.NLP.CoreNLP.3.5.2\lib\jollyday.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
       <HintPath>..\packages\log4net.2.0.3\lib\net40-full\log4net.dll</HintPath>
       <Private>True</Private>
@@ -177,8 +185,8 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="stanford-parser, Version=3.5.2.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Stanford.NLP.Parser.3.5.2\lib\stanford-parser.dll</HintPath>
+    <Reference Include="stanford-corenlp-3.5.2, Version=3.5.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Stanford.NLP.CoreNLP.3.5.2\lib\stanford-corenlp-3.5.2.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -250,6 +258,10 @@
     <Reference Include="Antlr3.Runtime">
       <Private>True</Private>
       <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="xom, Version=1.2.10.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Stanford.NLP.CoreNLP.3.5.2\lib\xom.dll</HintPath>
+      <Private>True</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -355,24 +367,24 @@
     <Content Include="Areas\HelpPage\HelpPage.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="edu\stanford\nlp\models\dcoref\animate.unigrams.txt" />
-    <Content Include="edu\stanford\nlp\models\dcoref\demonyms.txt" />
-    <Content Include="edu\stanford\nlp\models\dcoref\female.unigrams.txt" />
-    <Content Include="edu\stanford\nlp\models\dcoref\inanimate.unigrams.txt" />
-    <Content Include="edu\stanford\nlp\models\dcoref\male.unigrams.txt" />
-    <Content Include="edu\stanford\nlp\models\dcoref\namegender.combine.txt" />
-    <Content Include="edu\stanford\nlp\models\dcoref\ne.signatures.txt" />
-    <Content Include="edu\stanford\nlp\models\dcoref\neutral.unigrams.txt" />
-    <Content Include="edu\stanford\nlp\models\dcoref\plural.unigrams.txt" />
-    <Content Include="edu\stanford\nlp\models\dcoref\singular.unigrams.txt" />
-    <Content Include="edu\stanford\nlp\models\dcoref\state-abbreviations.txt" />
-    <Content Include="edu\stanford\nlp\models\sutime\defs.sutime.txt" />
-    <Content Include="edu\stanford\nlp\models\sutime\english.holidays.sutime.txt" />
-    <Content Include="edu\stanford\nlp\models\sutime\english.sutime.txt" />
-    <Content Include="edu\stanford\nlp\models\sutime\jollyday\Holidays_sutime.xml" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="NLPModels\edu\stanford\nlp\models\dcoref\animate.unigrams.txt" />
+    <Content Include="NLPModels\edu\stanford\nlp\models\dcoref\demonyms.txt" />
+    <Content Include="NLPModels\edu\stanford\nlp\models\dcoref\female.unigrams.txt" />
+    <Content Include="NLPModels\edu\stanford\nlp\models\dcoref\inanimate.unigrams.txt" />
+    <Content Include="NLPModels\edu\stanford\nlp\models\dcoref\male.unigrams.txt" />
+    <Content Include="NLPModels\edu\stanford\nlp\models\dcoref\namegender.combine.txt" />
+    <Content Include="NLPModels\edu\stanford\nlp\models\dcoref\ne.signatures.txt" />
+    <Content Include="NLPModels\edu\stanford\nlp\models\dcoref\neutral.unigrams.txt" />
+    <Content Include="NLPModels\edu\stanford\nlp\models\dcoref\plural.unigrams.txt" />
+    <Content Include="NLPModels\edu\stanford\nlp\models\dcoref\singular.unigrams.txt" />
+    <Content Include="NLPModels\edu\stanford\nlp\models\dcoref\state-abbreviations.txt" />
+    <Content Include="NLPModels\edu\stanford\nlp\models\sutime\defs.sutime.txt" />
+    <Content Include="NLPModels\edu\stanford\nlp\models\sutime\english.holidays.sutime.txt" />
+    <Content Include="NLPModels\edu\stanford\nlp\models\sutime\english.sutime.txt" />
+    <Content Include="NLPModels\edu\stanford\nlp\models\sutime\jollyday\Holidays_sutime.xml" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Areas\HelpPage\Views\Web.config" />
@@ -394,45 +406,46 @@
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\CollectionModelDescription.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
-    <Content Include="edu\stanford\nlp\dcoref\coref.properties" />
-    <Content Include="edu\stanford\nlp\models\dcoref\coref.dict1.tsv" />
-    <Content Include="edu\stanford\nlp\models\dcoref\coref.dict2.tsv" />
-    <Content Include="edu\stanford\nlp\models\dcoref\coref.dict3.tsv" />
-    <Content Include="edu\stanford\nlp\models\dcoref\coref.dict4.tsv" />
-    <Content Include="edu\stanford\nlp\models\dcoref\countries" />
-    <Content Include="edu\stanford\nlp\models\dcoref\gender.data.gz" />
-    <Content Include="edu\stanford\nlp\models\dcoref\gender.map.ser.gz" />
-    <Content Include="edu\stanford\nlp\models\dcoref\singleton.predictor.ser" />
-    <Content Include="edu\stanford\nlp\models\dcoref\statesandprovinces" />
-    <Content Include="edu\stanford\nlp\models\gender\first_name_map_small" />
-    <Content Include="edu\stanford\nlp\models\lexparser\englishPCFG.ser.gz" />
-    <Content Include="edu\stanford\nlp\models\lexparser\englishRNN.ser.gz" />
-    <Content Include="edu\stanford\nlp\models\ner\english.all.3class.distsim.crf.ser.gz" />
-    <Content Include="edu\stanford\nlp\models\ner\english.all.3class.distsim.prop" />
-    <Content Include="edu\stanford\nlp\models\ner\english.conll.4class.distsim.crf.ser.gz" />
-    <Content Include="edu\stanford\nlp\models\ner\english.conll.4class.distsim.prop" />
-    <Content Include="edu\stanford\nlp\models\ner\english.muc.7class.distsim.crf.ser.gz" />
-    <Content Include="edu\stanford\nlp\models\ner\english.muc.7class.distsim.prop" />
-    <Content Include="edu\stanford\nlp\models\parser\nndep\CTB_CoNLL_params.txt.gz" />
-    <Content Include="edu\stanford\nlp\models\parser\nndep\english_SD.gz" />
-    <Content Include="edu\stanford\nlp\models\parser\nndep\english_UD.gz" />
-    <Content Include="edu\stanford\nlp\models\parser\nndep\PTB_CoNLL_params.txt.gz" />
-    <Content Include="edu\stanford\nlp\models\parser\nndep\wsj_SD.gz" />
-    <Content Include="edu\stanford\nlp\models\pos-tagger\english-bidirectional\english-bidirectional-distsim.tagger" />
-    <Content Include="edu\stanford\nlp\models\pos-tagger\english-bidirectional\english-bidirectional-distsim.tagger.props" />
-    <Content Include="edu\stanford\nlp\models\pos-tagger\english-left3words\english-left3words-distsim.tagger" />
-    <Content Include="edu\stanford\nlp\models\pos-tagger\english-left3words\english-left3words-distsim.tagger.props" />
-    <Content Include="edu\stanford\nlp\models\regexner\type_map_clean" />
-    <Content Include="edu\stanford\nlp\models\sentiment\sentiment.binary.ser.gz" />
-    <Content Include="edu\stanford\nlp\models\sentiment\sentiment.ser.gz" />
-    <Content Include="edu\stanford\nlp\models\supervised_relation_extractor\roth_relation_model_pipelineNER.ser" />
-    <Content Include="edu\stanford\nlp\models\truecase\MixDisambiguation.list" />
-    <Content Include="edu\stanford\nlp\models\truecase\truecasing.fast.caseless.prop" />
-    <Content Include="edu\stanford\nlp\models\truecase\truecasing.fast.caseless.qn.ser.gz" />
-    <Content Include="edu\stanford\nlp\models\truecase\truecasing.fast.prop" />
-    <Content Include="edu\stanford\nlp\models\truecase\truecasing.fast.qn.ser.gz" />
-    <Content Include="edu\stanford\nlp\models\upos\ENUniversalPOS.tsurgeon" />
-    <Content Include="edu\stanford\nlp\pipeline\StanfordCoreNLP.properties" />
+    <Content Include="NLPModels\edu\stanford\nlp\dcoref\coref.properties" />
+    <Content Include="NLPModels\edu\stanford\nlp\models\dcoref\coref.dict1.tsv" />
+    <Content Include="NLPModels\edu\stanford\nlp\models\dcoref\coref.dict2.tsv" />
+    <Content Include="NLPModels\edu\stanford\nlp\models\dcoref\coref.dict3.tsv" />
+    <Content Include="NLPModels\edu\stanford\nlp\models\dcoref\coref.dict4.tsv" />
+    <Content Include="NLPModels\edu\stanford\nlp\models\dcoref\countries" />
+    <Content Include="NLPModels\edu\stanford\nlp\models\dcoref\gender.data.gz" />
+    <Content Include="NLPModels\edu\stanford\nlp\models\dcoref\gender.map.ser.gz" />
+    <Content Include="NLPModels\edu\stanford\nlp\models\dcoref\singleton.predictor.ser" />
+    <Content Include="NLPModels\edu\stanford\nlp\models\dcoref\statesandprovinces" />
+    <Content Include="NLPModels\edu\stanford\nlp\models\gender\first_name_map_small" />
+    <Content Include="NLPModels\edu\stanford\nlp\models\lexparser\englishPCFG.ser.gz" />
+    <Content Include="NLPModels\edu\stanford\nlp\models\lexparser\englishRNN.ser.gz" />
+    <Content Include="NLPModels\edu\stanford\nlp\models\ner\english.all.3class.distsim.crf.ser.gz" />
+    <Content Include="NLPModels\edu\stanford\nlp\models\ner\english.all.3class.distsim.prop" />
+    <Content Include="NLPModels\edu\stanford\nlp\models\ner\english.conll.4class.distsim.crf.ser.gz" />
+    <Content Include="NLPModels\edu\stanford\nlp\models\ner\english.conll.4class.distsim.prop" />
+    <Content Include="NLPModels\edu\stanford\nlp\models\ner\english.muc.7class.distsim.crf.ser.gz" />
+    <Content Include="NLPModels\edu\stanford\nlp\models\ner\english.muc.7class.distsim.prop" />
+    <Content Include="NLPModels\edu\stanford\nlp\models\parser\nndep\CTB_CoNLL_params.txt.gz" />
+    <Content Include="NLPModels\edu\stanford\nlp\models\parser\nndep\english_SD.gz" />
+    <Content Include="NLPModels\edu\stanford\nlp\models\parser\nndep\english_UD.gz" />
+    <Content Include="NLPModels\edu\stanford\nlp\models\parser\nndep\PTB_CoNLL_params.txt.gz" />
+    <Content Include="NLPModels\edu\stanford\nlp\models\parser\nndep\wsj_SD.gz" />
+    <Content Include="NLPModels\edu\stanford\nlp\models\pos-tagger\english-bidirectional\english-bidirectional-distsim.tagger" />
+    <Content Include="NLPModels\edu\stanford\nlp\models\pos-tagger\english-bidirectional\english-bidirectional-distsim.tagger.props" />
+    <Content Include="NLPModels\edu\stanford\nlp\models\pos-tagger\english-left3words\english-left3words-distsim.tagger" />
+    <Content Include="NLPModels\edu\stanford\nlp\models\pos-tagger\english-left3words\english-left3words-distsim.tagger.props" />
+    <Content Include="NLPModels\edu\stanford\nlp\models\regexner\type_map_clean" />
+    <Content Include="NLPModels\edu\stanford\nlp\models\sentiment\sentiment.binary.ser.gz" />
+    <Content Include="NLPModels\edu\stanford\nlp\models\sentiment\sentiment.ser.gz" />
+    <Content Include="NLPModels\edu\stanford\nlp\models\supervised_relation_extractor\roth_relation_model_pipelineNER.ser" />
+    <Content Include="NLPModels\edu\stanford\nlp\models\truecase\MixDisambiguation.list" />
+    <Content Include="NLPModels\edu\stanford\nlp\models\truecase\truecasing.fast.caseless.prop" />
+    <Content Include="NLPModels\edu\stanford\nlp\models\truecase\truecasing.fast.caseless.qn.ser.gz" />
+    <Content Include="NLPModels\edu\stanford\nlp\models\truecase\truecasing.fast.prop" />
+    <Content Include="NLPModels\edu\stanford\nlp\models\truecase\truecasing.fast.qn.ser.gz" />
+    <Content Include="NLPModels\edu\stanford\nlp\models\upos\ENUniversalPOS.tsurgeon" />
+    <Content Include="NLPModels\edu\stanford\nlp\pipeline\StanfordCoreNLP.properties" />
+    <Content Include="NLPModels\META-INF\MANIFEST.MF" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />

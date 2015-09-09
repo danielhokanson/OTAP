@@ -13,7 +13,7 @@ namespace OTAP.API
         public void Configuration(IAppBuilder app)
         {
             ConfigureAuth(app);
-            NLP.Startup();
+            NLP.Start();
         }
     }
 }
